@@ -125,7 +125,7 @@ using typographical quotes “” and apostrophes ‘’.
     </style>
 
     <script>
-        const d = document; let s = d.getElementById("s"); const w = d.getElementById("w"); d.getElementById("x").addEventListener("click", e => { let t = e.target.classList; if ("t" !== t[1]) return; let n = d.createElement("div"); n.classList = t, s.appendChild(n); let a = [...s.children].map(e => e.classList[0]).join(""), i = "abbaabbacdecde"; "abbaabba" === a && (w.innerText = "Octave! Sonnet?"), i === a ? (w.innerText = "Sonnet!") : i.startsWith(a) || (s.innerHTML = "") });
+        const d = document; let s = d.getElementById("s"); const w = d.getElementById("w"); d.getElementById("x").addEventListener("click", e => { let t = e.target.classList; if ("t" !== t[1]) return; let n = d.createElement("div"); n.classList = t, s.appendChild(n); let a = [...s.children].map(e => e.classList[0]).join(""), i = "abbaabbacdecde"; "abbaabba" === a && (w.innerText = "Sonnet??"), i === a ? (w.innerText = "Sonnet!") : i.startsWith(a) || (s.innerHTML = "") });
     </script>
     <!-- End -->
 </body>
