@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Title (Taper #14)</title>
+
+    <!-- “Title” Copyright (C) 2024 Author
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved. This file is offered as-is,
+without any warranty.
+
+This is from Taper #14: Sonnets, Spring 2025:
+
+https://taper.badquar.to/14/title_of_your_work.html
+
+... your creative statement here ...
+
+*** BEGIN TEMPLATE INSTRUCTIONS ***
+* All poem code goes between the closing header and closing body tags
+below, and must not exceed 2KB (2048 bytes).
+* Without removing any template punctuation, insert your author name,
+poem title, and poem filename throughout the template, making sure your
+text, capitalization, and punctuation is consistent across the file.
+* Insert your creative statement above, wrapped to 72 characters, and
+using typographical quotes “” and apostrophes ‘’.
+* Do not modify the template in any other way.
+*** END TEMPLATE INSTRUCTIONS ***
+
+-->
+
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden
+        }
+
+        a {
+            color: #eee;
+            text-decoration: none
+        }
+
+        header {
+            margin: 0;
+            padding: 0;
+            background-color: #444;
+            color: #bbb;
+            position: relative;
+            z-index: 1000
+        }
+
+        header>h1 {
+            margin: 0;
+            font-size: 12px;
+            font-family: sans-serif;
+            border-bottom: 1px #999 solid;
+            padding: 5px 10px;
+            line-height: 17px
+        }
+    </style>
+</head>
+
+<body>
+    <header id="nav">
+        <h1>
+            <a href="prev.html">&lt;&lt;</a> &nbsp;
+            <a href="index.html">Taper #14 :
+                TBA</a> : Spring 2025 &nbsp;
+            <a href="next.html">&gt;&gt;</a><br>
+            <a href="title_of_your_work.html">Code Sonnet</a> by
+            <a href="about.html#watts">Nicole</a>
+        </h1>
+    </header>
+    <!-- Start -->
+    <h1 id="w">Sonnet?</h1>
+    <div id="s"></div>
+    <div id="x"><button class="a t"></button><button class="b t"></button><button class="c t"></button><button class="d t"></button><button class="e t"></button></div>    
+    <style>
+        #s,
+        #x,
+        #w {
+            display: flex;
+            flex-flow: row;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            font-family: arial;
+            padding: 10px;
+        }
+
+        @keyframes e { 0% { transform: rotate(12deg); } 100% { transform: rotate(0deg); } }
+        #s > * { animation: e 500ms; }
+
+        #s:has(> :nth-child(14)) { background-color: rgb(226, 253, 226); }
+
+
+        #x {
+            position: absolute;
+            inset: auto 0 0;
+            padding: 22px;
+        }
+
+        button {
+            width: 44px;
+            cursor: pointer;
+            box-shadow: 2px 2px 0px #ccc;
+        }
+
+        .t {
+            width: 60px;
+            aspect-ratio: 1;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .a { background-color: #ffbe0b; }
+        .b { background-color: #fb5607; }
+        .c { background-color: #ff006e; }
+        .d { background-color: #8338ec; }
+        .e { background-color: #3a86ff; }
+    </style>
+
+    <script>
+        const d = document; let s = d.getElementById("s"); const w = d.getElementById("w"); d.getElementById("x").addEventListener("click", e => { let t = e.target.classList; if ("t" !== t[1]) return; let n = d.createElement("div"); n.classList = t, s.appendChild(n); let a = [...s.children].map(e => e.classList[0]).join(""), i = "abbaabbacdecde"; "abbaabba" === a && (w.innerText = "Octave! Sonnet?"), i === a ? (w.innerText = "Sonnet!") : i.startsWith(a) || (s.innerHTML = "") });
+    </script>
+    <!-- End -->
+</body>
+
+</html>
